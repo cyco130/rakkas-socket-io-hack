@@ -1,0 +1,28 @@
+{
+  "name": "rakkas-socket-io-example",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "rakkas",
+    "build": "rakkas build",
+    "start": "node entry-prod.js",
+    "test": "pnpm test:typecheck",
+    "test:typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "rakkasjs": "0.6.2-next.9",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.1",
+    "vite-tsconfig-paths": "^3.5.2"
+  },
+  "dependencies": {
+    "@vavite/expose-vite-dev-server": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sirv": "^2.0.2",
+    "socket.io": "^4.5.3",
+    "socket.io-client": "^4.5.3"
+  }
+}
